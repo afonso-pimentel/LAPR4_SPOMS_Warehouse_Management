@@ -1,0 +1,25 @@
+8::
+Gosto muito deste produto;
+9::
+1(Gin);
+10::
+1(Gin)%in%Bombay Sapphire%in%;
+11::
+{1(Gin),
+2(Vodka),
+3(Whisky)};
+12::
+{1(Gin),
+2(Vodka),
+3(Whisky)}
+%in%Com agua tonica%in%;
+13::
+#1(Gin),
+2(Vodka),
+3(Whisky)#;
+14::
+%s%
+1(Gin sabe bem)%so%Agree%so%,
+2(Whisky sabe bem)%so%Agree%so%,
+3(Batido detox sabe bem)%so%Strongly Disagree%so%
+%s%;

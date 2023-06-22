@@ -1,0 +1,45 @@
+COSM22-01;
+Laptop Questionnaire;
+Hello John.
+This aims to know if you are happy with your new laptop.
+It will take you up to 5 minutes.
+Thank You for your patience.
+1.
+Performance.
+mandatory.
+1.
+Does the laptop run smooth?
+If not, tell us what is wrong.
+1 - Yes
+2 - No
+Why:
+mandatory.
+2.
+Does it overheat when doing intensive work or gaming?
+1 - Yes
+2 - No
+mandatory.
+3.
+Do you agree this laptop is fast by todays standards?
+Strongly Agree | Agree | Neutral | Disagree | Strongly Disagree
+optional.
+2.
+Priorities.
+mandatory.
+4.
+From 1 to 5 how do you prioritize the following specifications on a laptop?
+1 - CPU
+2 - RAM
+3 - STORAGE
+4 - GPU
+5 - Weight
+optional.
+3.
+Satisfaction.
+optional.
+5.
+Do you agree the order dispatch was quick?
+Strongly Agree | Agree | Neutral | Disagree | Strongly Disagree
+mandatory.
+You have successfully completed the survey.
+Thank You John.

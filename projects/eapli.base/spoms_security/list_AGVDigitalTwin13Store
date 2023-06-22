@@ -1,0 +1,10 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+echo ""
+echo "****************************"
+echo "[AGV Digital Twin 13 trusted store]"
+echo "****************************"
+echo ""
+ 
+keytool -list -keystore AGVDigitalTwin13.jks -storepass ${STOREPASS} 2>/dev/null

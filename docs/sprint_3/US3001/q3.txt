@@ -1,0 +1,129 @@
+COSM22-03;
+Cosmetics Questionnaire;
+Hello John.
+This aims to know if you are happy with our ordering service.
+It will take you up to 5 minutes.
+Thank You for your patience.
+1.
+About you.
+mandatory.
+1.
+What is your gender?
+1 - Male
+2 - Female
+3 - Other
+mandatory.
+2.
+What is your age group?
+1 - 18-24
+2 - 25-34
+3 - 35-44
+4 - 45-54
+5 - 55-64
+6 - 65-74
+7 - 75+ 
+mandatory.
+3.
+What is the region you live in?
+1 - North
+2 - Center
+3 - South
+4 - Madeira
+5 - Azores
+mandatory.
+2.
+Product categories.
+optional.
+4.
+What categories are you used to buying products from?
+1 - Skin care 
+2 - Hair care
+3 - Make-up
+mandatory.
+3.
+Skin care.
+condition dependent.
+on a set of selected values.
+5.
+What is your skin type?
+mandatory.
+6.
+How often do you use facial creams?
+1 - every day
+2 - often
+3 - rarely
+4 - never
+mandatory.
+7.
+Which factors do you consider relevant to buy?
+condition dependent.
+based on a previous answered question.
+4.
+Hair care.
+condition dependent.
+on a set of selected values.
+8.
+Do you wash your hair every day?
+1 - Yes
+2 - No
+mandatory.
+9.
+Do you use conditioner?
+1 - Yes
+2 - No
+mandatory.
+5.
+Make-up.
+condition dependent.
+on a set of selected values.
+10.
+Do you use make-up everyday?
+1 - Yes
+2 - No
+mandatory.
+6.
+Willingness to buy.
+condition dependent.
+on a set of selected values.
+11.
+How willing are you to try new products of a selected category?
+mandatory.
+12.
+How much are you available to spend on such buy?
+mandatory.
+7.
+Disagreement.
+mandatory.
+13.
+Do you agree with the following statements?
+Strongly Agree | Agree | Neutral | Disagree | Strongly Disagree
+1 - Cheapest products are as good as expensive
+2 - I spend too much money on cosmetics
+3 - The only guarantee of quality is a recognizable brand
+mandatory.
+8.
+More about you.
+optional.
+14.
+What is your working status?
+1 - Full time
+2 - Part time
+3 - Unemployed
+4 - Student
+5 - Retired
+optional.
+15.
+What is your marital status?
+1 - Married
+2 - Single
+3 - Divorced
+4 - Widow
+optional.
+16.
+Do you have children?
+1 - Yes
+2 - No
+How many:
+optional.
+You have successfully completed the survey.
+Thank You John.

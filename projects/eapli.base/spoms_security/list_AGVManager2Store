@@ -1,0 +1,10 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+echo ""
+echo "****************************"
+echo "[AGV Manager 2 trusted store]"
+echo "****************************"
+echo ""
+ 
+keytool -list -keystore AGVManager2.jks -storepass ${STOREPASS} 2>/dev/null

@@ -1,0 +1,36 @@
+COSM22-02;
+Order Satisfaction Questionnaire;
+Hello John.
+This aims to know if you are happy with our ordering service.
+It will take you up to 5 minutes.
+Thank You for your patience.
+1.
+Catalog.
+mandatory.
+1.
+Do you think the catalog is simple?
+If not, tell us what we could change.
+1 - Yes
+2 - No
+What can we change:
+mandatory.
+2.
+Product Marketing.
+optional.
+2.
+Would you agree our product marketing is at a professional level?
+Strongly Agree | Agree | Neutral | Disagree | Strongly Disagree
+optional.
+3.
+Shipment Speed.
+mandatory.
+3.
+From 1 to 5 how do you rate our speed of shipment?
+1 - 1
+2 - 2
+3 - 3
+4 - 4
+5 - 5
+mandatory.
+You have successfully completed the survey.
+Thank You John.

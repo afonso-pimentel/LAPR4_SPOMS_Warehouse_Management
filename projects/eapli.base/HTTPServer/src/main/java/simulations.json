@@ -1,0 +1,134 @@
+[
+  {
+    "id": "01",
+    "x": "01",
+    "y": "05",
+    "status": "idle"
+  },
+  {
+    "id": "01",
+    "x": "01",
+    "y": "05",
+    "status": "idle"
+  },
+  {
+    "id": "01",
+    "x": "02",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "03",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "06",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "07",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "07",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "06",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "04",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "03",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "02",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "02",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "03",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "04",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "05",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "04",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "03",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "02",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "01",
+    "y": "05",
+    "status": "working"
+  },
+  {
+    "id": "01",
+    "x": "01",
+    "y": "05",
+    "status": "charging"
+  }
+]

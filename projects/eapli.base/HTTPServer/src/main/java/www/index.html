@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>HTTP demo</title>
+
+    <!-- crossorigin="anonymous" -->
+
+    <script type="text/javascript" src="bootstrap\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+
+
+    <script type="text/javascript" src="draw_plant.js"></script>
+    <script type="text/javascript" src="fetch_server.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <style></style>
+  </head>
+  <body  onload="console.log(`hello`)" class="text-center">
+    <h1 >Dashboard</h1>
+
+    
+    
+    
+    <div id="dashboard_container" class="row col-10 offset-1 mt-5">      
+      <div id="center_plant" class="col-9"><span id="dt_warehouse_name"></span>
+      
+     
+      
+      </div>
+      <div id="right_bar" class="col-3">
+
+        <h2 class="t_left">Server connection:</h2>
+        <p id="server_status" class="lbl h_80"></p>
+
+
+          <h2 class="t_left">AGV status:</h2>
+        <div class="row pb-4 m-0">
+          <div class="col-2 sqr agv dot idle"></div>
+          <div class="col-10 lbl"> Idle</div>
+        </div>
+        <div class="row pb-4 m-0">
+          <div class="col-2 sqr agv dot working"></div>
+          <div class="col-10 lbl"> working</div>
+        </div>
+        <div class="row pb-4 m-0">
+          <div class="col-2 sqr agv dot low_battery"></div>
+          <div class="col-10 lbl"> low battery</div>
+        </div>
+        <div class="row pb-4 m-0">
+          <div class="col-2 sqr agv dot charging"></div>
+          <div class="col-10 lbl"> charging</div>
+        </div>
+        <div class="row pb-4 m-0">
+          <div class="col-2 sqr agv dot shutting_down"></div>
+          <div class="col-10 lbl"> shutdown</div>
+        </div>
+      
+      </div>
+    </div>
+
+  </body>
+</html>

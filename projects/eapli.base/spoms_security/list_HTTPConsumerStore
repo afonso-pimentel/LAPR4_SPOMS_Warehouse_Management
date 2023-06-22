@@ -1,0 +1,10 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+echo ""
+echo "****************************"
+echo "[HTPP Consumer trusted store]"
+echo "****************************"
+echo ""
+ 
+keytool -list -keystore HTTPConsumer.jks -storepass ${STOREPASS} 2>/dev/null

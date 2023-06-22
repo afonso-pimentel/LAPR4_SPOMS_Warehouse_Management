@@ -1,0 +1,49 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+for ENT in AGVManager AGVManager1 AGVManager2 AGVDigitalTwin1 AGVDigitalTwin12 AGVDigitalTwin13 OrderServer ClientApp BackOfficeApp HTTPServer HTTPConsumer; do
+ rm -f ${ENT}.jks ${ENT}.pem
+ echo -e "${ENT}\nDEI\nISEP\nPORTO\nPORTO\nPT\nyes" | keytool -genkey -v -alias ${ENT} -keyalg RSA -keysize 2048 \
+	-validity 365 -keystore ${ENT}.jks -storepass ${STOREPASS} 2>/dev/null
+ keytool -exportcert -alias ${ENT} -keystore ${ENT}.jks -storepass ${STOREPASS} -rfc -file ${ENT}.pem 2>/dev/null
+done
+
+echo "Creating trust relations for AGV Manager 1!"
+
+### ADD BIDIRECTIONAL TRUST RELATIONSHIPS FOR AGVMANAGER 1
+for ENT in AGVDigitalTwin1 AGVDigitalTwin12 BackOfficeApp HTTPConsumer; do
+ echo "yes"|keytool -import -alias ${ENT} -keystore AGVManager1.jks -file ${ENT}.pem -storepass ${STOREPASS} 2>/dev/null
+ echo "yes"|keytool -import -alias AGVManager1 -keystore ${ENT}.jks -file AGVManager1.pem -storepass ${STOREPASS} 2>/dev/null
+done
+
+### ADD UNIDIRECTIONAL TRUST RELATIONSHIP BETWEEN AGV MANAGER 1 AND AGVDIGITALTWIN13 TO EXPOSE EDGE ON RCOMP
+### AGV MANAGER 1 TRUSTS AGV DIGITAL TWIN 13 BUT AGV DIGITAL TWIN13 DOES NOT TRUST AGV MANAGER 1
+ echo "yes"|keytool -import -alias AGVDigitalTwin13 -keystore AGVManager1.jks -file AGVDigitalTwin13.pem -storepass ${STOREPASS} 2>/dev/null
+
+### ADD UNIDIRECTIONAL TRUST RELATIONSHIP BETWEEN AGV MANAGER 2 AND AGV DIGITAL TWIN 12 TO EXPOSE EDGE ON RCOMP
+### AGV MANAGER 2 DOES NOT TRUST AGV DIGITAL TWIN 12 BUT AGV DIGITAL TWIN 12 TRUSTS AGV MANAGER 2
+ echo "yes"|keytool -import -alias AGVManager2 -keystore AGVDigitalTwin12.jks -file AGVManager2.pem -storepass ${STOREPASS} 2>/dev/null
+
+echo "Creating trust relations for AGV Manager 2!"
+
+### ADD BIDIRECTIONAL TRUST RELATIONSHIPS FOR AGVMANAGER 2
+for ENT in AGVDigitalTwin13; do
+ echo "yes"|keytool -import -alias ${ENT} -keystore AGVManager2.jks -file ${ENT}.pem -storepass ${STOREPASS} 2>/dev/null
+ echo "yes"|keytool -import -alias AGVManager2 -keystore ${ENT}.jks -file AGVManager2.pem -storepass ${STOREPASS} 2>/dev/null
+done
+
+echo "Creating trust relations for OrderServer!"
+
+### ADD BIDRECTIONAL TRUST RELATIONSHIPS FOR ORDER SERVER
+for ENT in ClientApp; do
+ echo "yes"|keytool -import -alias ${ENT} -keystore OrderServer.jks -file ${ENT}.pem -storepass ${STOREPASS} 2>/dev/null
+ echo "yes"|keytool -import -alias OrderServer -keystore ${ENT}.jks -file OrderServer.pem -storepass ${STOREPASS} 2>/dev/null
+done
+
+echo "Creating trust relations for HTTP Server!"
+
+### ADD BIDIRECTIONAL TRUST RELATIONSHIP BETWEEN HTTP SERVER AND HTTP CONSUMER
+for ENT in HTTPConsumer; do
+ echo "yes"|keytool -import -alias ${ENT} -keystore HTTPServer.jks -file ${ENT}.pem -storepass ${STOREPASS} 2>/dev/null
+ echo "yes"|keytool -import -alias HTTPServer -keystore ${ENT}.jks -file HTTPServer.pem -storepass ${STOREPASS} 2>/dev/null
+done

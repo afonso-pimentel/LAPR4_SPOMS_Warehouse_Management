@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+./list_AGVManager1Store
+./list_AGVManager2Store
+./list_AGVDigitalTwin1Store
+./list_AGVDigitalTwin12Store
+./list_AGVDigitalTwin13Store
+./list_OrderServerStore
+./list_ClientAppStore
+./list_HTTPServerStore
+./list_HTTPConsumerStore

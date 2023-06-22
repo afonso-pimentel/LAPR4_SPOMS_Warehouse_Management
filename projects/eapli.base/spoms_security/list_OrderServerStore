@@ -1,0 +1,10 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+echo ""
+echo "****************************"
+echo "[Order Server trusted store]"
+echo "****************************"
+echo ""
+ 
+keytool -list -keystore OrderServer.jks -storepass ${STOREPASS} 2>/dev/null

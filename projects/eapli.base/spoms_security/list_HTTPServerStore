@@ -1,0 +1,10 @@
+#!/bin/bash
+STOREPASS="spoms2022"
+
+echo ""
+echo "****************************"
+echo "[HTPP Server trusted store]"
+echo "****************************"
+echo ""
+ 
+keytool -list -keystore HTTPServer.jks -storepass ${STOREPASS} 2>/dev/null
